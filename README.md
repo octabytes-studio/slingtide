@@ -29,14 +29,14 @@ The game has **no accounts** and the site is **pre-launch**, so the download but
 | Account Deletion URL | https://octabytes-studio.github.io/slingtide/delete-account.html (the game has no accounts; Data safety should say no account creation) |
 | Marketing URL | https://octabytes-studio.github.io/slingtide/ |
 | Developer Website | https://octabytes-studio.github.io/slingtide/ |
-| app-ads.txt | Not published. AdMob requires it at the domain root (`https://octabytes-studio.github.io/app-ads.txt`), and the real publisher ID is still pending. A GitHub project subpath cannot satisfy the root requirement. |
+| app-ads.txt | `https://octabytes-studio.github.io/app-ads.txt` — a root file already exists with publisher ID `pub-2195537972404209`. Confirm this is the AdMob account you will use for Slingtide before relying on it. Do not add a second file under `/slingtide/`. |
 | EULA | https://octabytes-studio.github.io/slingtide/terms.html |
 
 ## Before you submit to a store
 
 - **Real store links:** add the App Store and Google Play URLs to `index.html` (hero, CTA), then remove the “Soon” tags.
 - **ads:** `config/prod.json` currently has `ADS_ENABLED=true` with Google sample units and `ADS_TEST_UNITS=true`. Paste the real AdMob App IDs and eight unit IDs, set `ADS_TEST_UNITS=false`, and update the store Data safety / App Privacy answers to match this policy.
-- **app-ads.txt:** create the file at a domain root with the real `pub-…` line, and link that domain in both store listings. A custom domain or a `octabytes-studio.github.io` user-site repo is required.
+- **app-ads.txt:** the hostname root already serves `https://octabytes-studio.github.io/app-ads.txt` with publisher ID `pub-2195537972404209`. AdMob crawls the hostname of the developer website, so this file can satisfy the requirement if that publisher ID is the AdMob account for Slingtide. Confirm it; if not, replace the root file with the correct account's line. Do not publish a second copy under `/slingtide/`.
 - **In-app privacy link:** the app's Settings → Privacy notice is text-only. Apple 5.1.1(i) and Google Play expect an easily accessible link to this policy inside the app.
 - **iOS privacy manifest:** `ios/Runner/PrivacyInfo.xcprivacy` currently declares no tracking and no collected data while the app links AdMob and asks ATT for adults. Fix the manifest and App Privacy answers before submission.
 - **Store kit:** the older `slingshot_game_store_listing/listing/compliance.md` says “no ads / no data collected / 13+”. It predates the AdMob enabling release; update it before entering console answers.
