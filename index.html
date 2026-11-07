@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Slingtide — one-thumb slingshot defence for iOS &amp; Android</title>
+  <meta name="description" content="Drag anywhere to aim, release to fire, and pop every beach critter before it reaches Tully's nest. 50 levels, five shores, five bosses — playable offline.">
+  <link rel="canonical" href="https://octabytes-studio.github.io/slingtide/">
+  <meta name="theme-color" content="#0B7A88">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Slingtide">
+  <meta property="og:title" content="Slingtide — one-thumb slingshot defence for iOS &amp; Android">
+  <meta property="og:description" content="Drag anywhere to aim, release to fire, and pop every beach critter before it reaches Tully's nest. 50 levels, five shores, five bosses — playable offline.">
+  <meta property="og:url" content="https://octabytes-studio.github.io/slingtide/">
+  <meta property="og:image" content="https://octabytes-studio.github.io/slingtide/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Slingtide key art with Tully the sea turtle, beach critters and a lighthouse.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Slingtide — one-thumb slingshot defence for iOS &amp; Android">
+  <meta name="twitter:description" content="Pop beach critters, save Tully's nest. 50 levels, five shores, five bosses, playable offline.">
+  <meta name="twitter:image" content="https://octabytes-studio.github.io/slingtide/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/baloo2-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Slingtide",
+    "description": "A portrait, one-thumb slingshot defence game. Drag anywhere to aim, release to fire, and pop beach critters before they reach Tully the sea turtle's nest fence.",
+    "applicationCategory": "GameApplication",
+    "genre": ["Arcade", "Casual", "Defence"],
+    "gamePlatform": ["iOS", "Android"],
+    "operatingSystem": "iOS 15+, Android 7.0+",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OctaBytes"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9L12 2.6z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 5h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="18.3" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.3v13.4c0 .8.9 1.3 1.6.9l10.2-6.7c.6-.4.6-1.3 0-1.7L9.6 4.4C8.9 4 8 4.5 8 5.3z"/></symbol>
+    <symbol id="i-slingshot" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 3v6l5 4 5-4V3M12 13v8M8 21h8"/><circle cx="7" cy="4" r="1.2" fill="currentColor"/><circle cx="17" cy="4" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M2 8c2.5-3 5-3 7.5 0s5 3 7.5 0 3.5-2 5 0M2 14c2.5-3 5-3 7.5 0s5 3 7.5 0 3.5-2 5 0M2 20c2.5-3 5-3 7.5 0s5 3 7.5 0 3.5-2 5 0"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path fill="currentColor" d="M3 7l4 3 5-6 5 6 4-3-2 11H5L3 7zm3.4 9h11.2l1-5.7-3 2.3L12 7.2l-3.6 5.4-3-2.3 1 5.7z"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14.5 6.5a4.5 4.5 0 0 0-6 5.9L3 17.9V21h3.1l5.5-5.5a4.5 4.5 0 0 0 5.9-6l-2.8 2.8-2.9-2.9 2.7-2.9z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v5c0 4.4-2.9 8.2-7 10-4.1-1.8-7-5.6-7-10V6l7-3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-accessibility" viewBox="0 0 24 24"><circle cx="12" cy="4.2" r="1.8" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 8.5h14M12 8.5v5m0 0l-3.5 6M12 13.5l3.5 6"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 4h8v5a4 4 0 0 1-8 0V4zM8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4M12 13v5M8 21h8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M12 11v6"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7l8 6 8-6"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 1 0 2.3-5.7M4 4v5h5"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M9 7V4h6v3M6.5 7l1 14h9l1-14M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Slingtide home">
+        <img src="assets/img/logo.png" alt="Slingtide" width="174" height="39">
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#game">The game</a>
+        <a href="#screens">Screens</a>
+        <a href="#how">How to play</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Support</a>
+      </nav>
+      <details class="mobile-menu">
+        <summary><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span> Menu</summary>
+        <div class="menu-panel">
+          <a href="#game">The game</a>
+          <a href="#screens">Screens</a>
+          <a href="#how">How to play</a>
+          <a href="#faq">FAQ</a>
+          <a href="contact.html">Support</a>
+          <a class="menu-cta" href="#coming-soon">Coming soon</a>
+        </div>
+      </details>
+      <span class="header-cta"><svg aria-hidden="true"><use href="#i-star"></use></svg> Coming soon</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><svg aria-hidden="true"><use href="#i-sun"></use></svg> One-thumb slingshot defence</p>
+          <h1 id="hero-title">Hold the tide. <span class="pop">Save the nest.</span></h1>
+          <p class="hero-lede">Drag anywhere to aim, release to fire, and pop every beach critter before it reaches Tully the sea turtle's nest. Fifty levels, five shores, five bosses — and one very determined turtle.</p>
+          <div class="hero-actions" aria-label="Download status">
+            <div class="store-button is-soon" role="group" aria-label="Slingtide for iPhone and iPad — coming soon">
+              <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+              <span><span class="store-kicker">iPhone &amp; iPad</span><span class="store-name">App Store <span class="soon-tag">Soon</span></span></span>
+            </div>
+            <div class="store-button is-soon" role="group" aria-label="Slingtide for Android — coming soon">
+              <svg aria-hidden="true"><use href="#i-play"></use></svg>
+              <span><span class="store-kicker">Android</span><span class="store-name">Google Play <span class="soon-tag">Soon</span></span></span>
+            </div>
+          </div>
+          <ul class="trust-line">
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg> Plays offline</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg> No account</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg> No purchases in this version</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Slingtide home screen on a phone, with Tully and the lighthouse">
+          <span class="bubble bubble--1" aria-hidden="true"></span>
+          <span class="bubble bubble--2" aria-hidden="true"></span>
+          <span class="bubble bubble--3" aria-hidden="true"></span>
+          <span class="bubble bubble--4" aria-hidden="true"></span>
+          <img class="float-art float-art--lighthouse" src="assets/img/art/lighthouse.webp" alt="" width="280" height="340">
+          <img class="float-art float-art--nest" src="assets/img/art/nest.webp" alt="" width="271" height="138">
+          <div class="phone">
+            <img src="assets/img/screenshots/shot-home.webp" alt="Slingtide home screen showing Tully, the Glow Bay shore card and a Play button for level 39." width="540" height="1205" fetchpriority="high">
+          </div>
+          <div class="phone-caption">
+            <img src="assets/img/icon-192.png" alt="" width="34" height="34">
+            <div><strong>50 levels</strong><span>Five shores. Five bosses.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="wave-bottom" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section--sand" id="game" aria-labelledby="game-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">The game</p>
+          <h2 id="game-title">A tiny beach. A very big problem.</h2>
+          <p>Tully has one job: keep the nest safe. The beach critters have other plans. Every shot is a small decision — aim, power, angle, and which critter to pop first.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="icon-plate icon-plate--coral"><svg aria-hidden="true"><use href="#i-slingshot"></use></svg></span>
+            <h3>One thumb, any angle</h3>
+            <p>Touch anywhere and drag. A full draw hits harder and punches through; walls turn a clever angle into a bank shot.</p>
+          </article>
+          <article class="feature-card reveal" style="--delay: 60ms">
+            <span class="icon-plate icon-plate--teal"><svg aria-hidden="true"><use href="#i-wave"></use></svg></span>
+            <h3>Fifty levels, five shores</h3>
+            <p>Travel from Sunny Cove to Shipwreck Shore. Every shore ends in a boss, and every level has three stars to chase.</p>
+          </article>
+          <article class="feature-card reveal" style="--delay: 120ms">
+            <span class="icon-plate icon-plate--gold"><svg aria-hidden="true"><use href="#i-crown"></use></svg></span>
+            <h3>Five bosses, five phases</h3>
+            <p>Queen Moon Snail, Box Crab, Grand Octopus, Mirage Cuttlefish and the Coconut Crab King each change the fight as their health falls.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon-plate icon-plate--green"><svg aria-hidden="true"><use href="#i-wrench"></use></svg></span>
+            <h3>Thirteen upgrades</h3>
+            <p>Spend shells in the Workshop across the launcher, base, shots and helpers. Unlock five projectiles, from Sea Glass to Beam Glass.</p>
+          </article>
+          <article class="feature-card reveal" style="--delay: 60ms">
+            <span class="icon-plate icon-plate--purple"><svg aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            <h3>Every critter shows its HP</h3>
+            <p>Hermit Crabs shrug off light hits. Fiddler Crabs block from the front. Starfish heal, Big Conchs split, Seagulls hover. The pips tell you what a shot will do.</p>
+          </article>
+          <article class="feature-card reveal" style="--delay: 120ms">
+            <span class="icon-plate icon-plate--teal"><svg aria-hidden="true"><use href="#i-accessibility"></use></svg></span>
+            <h3>Made for one hand</h3>
+            <p>Portrait, short sessions, fully offline. Reduce Motion, bigger HP pips, a left-handed HUD and colour assist are all in Settings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="screens" aria-labelledby="screens-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Screens</p>
+          <h2 id="screens-title">Real screens from the real game.</h2>
+          <p>No mockups. These are captures from the Android build; iPhone screens may differ slightly in spacing.</p>
+        </div>
+        <div class="screen-grid">
+          <figure class="shot reveal">
+            <div class="shot-frame">
+              <img src="assets/img/screenshots/shot-home.webp" alt="Home screen with the Glow Bay shore card, 3,840 shells, 23 of 30 stars and a Play button." width="540" height="1205" loading="lazy">
+            </div>
+            <figcaption><strong>Your next shore</strong><span>Home shows the next level, your shells and your stars.</span></figcaption>
+          </figure>
+          <figure class="shot reveal" style="--delay: 60ms">
+            <div class="shot-frame">
+              <img src="assets/img/screenshots/shot-path.webp" alt="Level path winding through Glow Bay with numbered levels, stars and a boss marker at level 40." width="540" height="1205" loading="lazy">
+            </div>
+            <figcaption><strong>The long way round</strong><span>Fifty levels, five shores and a boss at the end of each.</span></figcaption>
+          </figure>
+          <figure class="shot reveal" style="--delay: 120ms">
+            <div class="shot-frame">
+              <img src="assets/img/screenshots/shot-play.webp" alt="Gameplay on Coral Lagoon: Tully at the slingshot, critters advancing, and the full-draw indicator." width="540" height="1205" loading="lazy">
+            </div>
+            <figcaption><strong>Drag. Release. Pop.</strong><span>A full draw hits harder and punches through.</span></figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <div class="shot-frame">
+              <img src="assets/img/screenshots/shot-workshop.webp" alt="Workshop screen with launcher upgrades, prices in shells and an Ember Shell recommendation." width="540" height="1205" loading="lazy">
+            </div>
+            <figcaption><strong>Spend every shell</strong><span>Thirteen upgrades across launcher, base, shots and helpers.</span></figcaption>
+          </figure>
+          <figure class="shot reveal" style="--delay: 60ms">
+            <div class="shot-frame">
+              <img src="assets/img/screenshots/shot-boss.webp" alt="Boss briefing for the Grand Octopus, showing 40 HP, three phases and five projectile choices." width="540" height="1205" loading="lazy">
+            </div>
+            <figcaption><strong>Know your foe</strong><span>Each boss briefing shows every phase before you start.</span></figcaption>
+          </figure>
+          <figure class="shot reveal" style="--delay: 120ms">
+            <div class="shot-frame">
+              <img src="assets/img/screenshots/shot-results.webp" alt="Level clear results screen with three stars, fence 8 of 8, 79 percent accuracy and 327 shells." width="540" height="1205" loading="lazy">
+            </div>
+            <figcaption><strong>Chase three stars</strong><span>Every run ends with accuracy, combo and shells.</span></figcaption>
+          </figure>
+        </div>
+        <p class="screen-note">Screenshots are from a development build. Art, numbers and layout may change before launch.</p>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">How to play</p>
+          <h2 id="how-title">Aim. Release. Hold the fence.</h2>
+          <p>No tutorials to read, no timers to beat. Just a slingshot, a beach full of critters, and Tully behind you.</p>
+        </div>
+        <div class="how-grid">
+          <article class="how-step reveal">
+            <h3>Aim anywhere</h3>
+            <p>Touch anywhere on the beach and drag. The slingshot follows your thumb, so you never cover the target.</p>
+          </article>
+          <article class="how-step reveal" style="--delay: 60ms">
+            <h3>Release to fire</h3>
+            <p>A full draw hits harder and pierces. On later shores, walls turn a clever angle into a bank shot.</p>
+          </article>
+          <article class="how-step reveal" style="--delay: 120ms">
+            <h3>Hold the line</h3>
+            <p>Pop every critter before it reaches the fence. Clear the level, earn shells, then spend them in the Workshop.</p>
+          </article>
+        </div>
+        <div class="stats" aria-label="Game content at a glance">
+          <div class="stat reveal"><span class="num" data-count="50">50</span><span class="label">Levels</span></div>
+          <div class="stat reveal" style="--delay: 60ms"><span class="num" data-count="5">5</span><span class="label">Shores</span></div>
+          <div class="stat reveal" style="--delay: 120ms"><span class="num" data-count="13">13</span><span class="label">Upgrades</span></div>
+          <div class="stat reveal" style="--delay: 180ms"><span class="num" data-count="31">31</span><span class="label">Achievements</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="shores" aria-labelledby="shores-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">The journey</p>
+          <h2 id="shores-title">Five shores. Five bosses.</h2>
+          <p>Each shore brings a new palette, new critters and one boss with phases to learn. The last shore is not a beach holiday.</p>
+        </div>
+        <div class="shore-grid">
+          <article class="shore-card reveal" style="--shore: #8FE3F0; --shore-deep: #0A6F95">
+            <div class="shore-window"><span>Shore 1</span></div>
+            <h3>Sunny Cove</h3>
+            <p class="levels">Levels 1–10</p>
+            <p class="boss">Boss: <strong>Queen Moon Snail</strong></p>
+          </article>
+          <article class="shore-card reveal" style="--shore: #A9D8E8; --shore-deep: #0C5E7A; --delay: 60ms">
+            <div class="shore-window"><span>Shore 2</span></div>
+            <h3>Tide Pools</h3>
+            <p class="levels">Levels 11–20</p>
+            <p class="boss">Boss: <strong>Box Crab</strong></p>
+          </article>
+          <article class="shore-card reveal" style="--shore: #FFB38A; --shore-deep: #2F5C8F; --delay: 120ms">
+            <div class="shore-window"><span>Shore 3</span></div>
+            <h3>Coral Lagoon</h3>
+            <p class="levels">Levels 21–30</p>
+            <p class="boss">Boss: <strong>Grand Octopus</strong></p>
+          </article>
+          <article class="shore-card reveal" style="--shore: #0B1D3A; --shore-deep: #061733; --delay: 180ms">
+            <div class="shore-window"><span>Shore 4</span></div>
+            <h3>Glow Bay</h3>
+            <p class="levels">Levels 31–40</p>
+            <p class="boss">Boss: <strong>Mirage Cuttlefish</strong></p>
+          </article>
+          <article class="shore-card reveal" style="--shore: #3B4A63; --shore-deep: #1C2A3A; --delay: 240ms">
+            <div class="shore-window"><span>Shore 5</span></div>
+            <h3>Shipwreck Shore</h3>
+            <p class="levels">Levels 41–50</p>
+            <p class="boss">Boss: <strong>Coconut Crab King</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="art-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">The crew</p>
+          <h2 id="art-title">Tully, the critters and the lighthouse.</h2>
+          <p>Original art, built for this game. The beach is bright, the critters are grumpy, and the nest is always one bad wave away from trouble.</p>
+        </div>
+        <div class="art-band reveal">
+          <img src="assets/img/art/feature-graphic.webp" alt="Slingtide key art: Tully the sea turtle holding a slingshot, surrounded by a crab, snail, jellyfish, seagull and lighthouse." width="1024" height="500" loading="lazy">
+        </div>
+        <div class="art-caption">
+          <span><strong>Original Slingtide art.</strong> No stock photos, no borrowed characters.</span>
+          <span>Five shores, one very patient turtle.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand section--tight" aria-labelledby="ads-title">
+      <div class="container">
+        <div class="ads-note reveal">
+          <span class="icon-plate icon-plate--gold"><svg aria-hidden="true"><use href="#i-info"></use></svg></span>
+          <p id="ads-title"><strong>Slingtide is supported by ads from Google AdMob.</strong> Ads appear on menu screens and between runs — never over the launcher or a run. Players under 13 see non-personalized banners only; teens see non-personalized ads. <a href="privacy.html#ads">Read the ad and privacy details</a>.</p>
+          <a class="btn btn-ghost btn-small" href="privacy.html">Privacy policy <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="kicker">Questions</p>
+          <h2 id="faq-title">The short answers.</h2>
+          <p>If yours is not here, email us at <a href="mailto:octabytes.studio@gmail.com">octabytes.studio@gmail.com</a>.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>When can I play Slingtide? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>Slingtide is coming to the App Store and Google Play. This page will link to both listings as soon as they are live. There is no download link yet, and we will not send you to another game's store page.</p></div>
+          </details>
+          <details>
+            <summary>Is it free? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>The price will be shown on the store listing when the game launches. The current version does not sell in-app purchases, so there is no shop, no subscription and no paywall inside the game.</p></div>
+          </details>
+          <details>
+            <summary>Does it work offline? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>Yes. Gameplay, progress, settings and achievements all work without a connection. Ads need a network; if you are offline, the game carries on without them.</p></div>
+          </details>
+          <details>
+            <summary>Do I need an account? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>No. There is no sign-up, no login, no cloud save and no social profile. Your progress is stored on your device and in your own device backup.</p></div>
+          </details>
+          <details>
+            <summary>Are there ads? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>Yes — Google AdMob. Banners appear on menu screens, one interstitial can appear between a run and its results, and two optional rewarded ads can offer a continue or double currency. Ads never cover a run. Players under 13 (and unknown ages) get non-personalized banners only; 13–17s get non-personalized ads; adults may get personalized ads only with consent. <a href="privacy.html#ads">Full details</a>.</p></div>
+          </details>
+          <details>
+            <summary>Can I remove ads? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>The current version does not sell an ad-removal purchase. If we add one, it will use the App Store or Google Play billing and these terms will be updated before it ships.</p></div>
+          </details>
+          <details>
+            <summary>What devices does it support? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>iPhone and iPad on iOS 15 or later, and Android phones and tablets on Android 7.0 or later. The game is portrait-only and designed for one hand. Large-tablet layout is still being polished; check the store listing for the final device list.</p></div>
+          </details>
+          <details>
+            <summary>How do I delete my data? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>There is no account to delete. Open Settings → Reset progress and type ERASE to clear levels, stars, shells, upgrades, achievements, stats and the age band. To remove everything, including settings and the random player ID, uninstall the app and remove it from your device backup. <a href="delete-account.html">Step-by-step instructions</a>.</p></div>
+          </details>
+          <details>
+            <summary>How do I report a bug or ask a privacy question? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="answer"><p>Email <a href="mailto:octabytes.studio@gmail.com">octabytes.studio@gmail.com</a> with your device, OS version and what happened. For game bugs, Settings → Copy diagnostics puts the build details on your clipboard so you can paste them into the email. <a href="contact.html">Contact page</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="coming-soon" aria-labelledby="cta-title">
+      <div class="container">
+        <img class="app-icon" src="assets/img/icon-192.png" alt="" width="84" height="84" loading="lazy">
+        <h2 id="cta-title">Tully will be waiting.</h2>
+        <p>Slingtide is coming to iOS and Android. Check back here for the real store links — we will not point you at anyone else's game.</p>
+        <div class="cta-actions">
+          <span class="store-button is-soon" role="group" aria-label="App Store — coming soon">
+            <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+            <span><span class="store-kicker">iPhone &amp; iPad</span><span class="store-name">App Store <span class="soon-tag">Soon</span></span></span>
+          </span>
+          <span class="store-button is-soon" role="group" aria-label="Google Play — coming soon">
+            <svg aria-hidden="true"><use href="#i-play"></use></svg>
+            <span><span class="store-kicker">Android</span><span class="store-name">Google Play <span class="soon-tag">Soon</span></span></span>
+          </span>
+          <a class="btn btn-ghost" href="contact.html">Ask us a question <svg aria-hidden="true"><use href="#i-mail"></use></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/icon-192.png" alt="" width="44" height="44" loading="lazy">
+          <div>
+            <strong>Slingtide</strong>
+            <p>A one-thumb slingshot defence game from OctaBytes. Made for short sessions, one hand and a very patient sea turtle.</p>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Game links">
+          <h2>Game</h2>
+          <ul>
+            <li><a href="#game">The game</a></li>
+            <li><a href="#screens">Screens</a></li>
+            <li><a href="#how">How to play</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Legal and support links">
+          <h2>Legal &amp; support</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="delete-account.html">Delete your data</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="licenses.html">Licences &amp; credits</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OctaBytes. Slingtide and its characters are original works.</p>
+        <p>Apple, App Store, Google Play and Android are trademarks of their respective owners. This site uses no cookies or analytics.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

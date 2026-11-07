@@ -1,0 +1,32 @@
+{
+  "name": "Slingtide — one-thumb slingshot defence",
+  "short_name": "Slingtide",
+  "description": "Drag anywhere to aim, release to fire, and pop every beach critter before it reaches Tully's nest.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFF6E5",
+  "theme_color": "#0B7A88",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
